@@ -27,8 +27,12 @@
             <input type="text" class="form-control" id="tel" name="tel" value="{{ $setting->tel ?? '' }}">
         </div>
         <div class="form-group">
-            <label for="mobile">Mobil</label>
+            <label for="mobile">Mobil Site</label>
             <input type="text" class="form-control" id="mobile" name="mobile" value="{{ $setting->mobile ?? '' }}">
+        </div>
+        <div class="form-group">
+            <label for="mobile_site">Mobil *arada boşluk olmayacak</label>
+            <input type="text" class="form-control" id="mobile_site" name="mobile_site" value="{{ $setting->mobile_site ?? '' }}">
         </div>
         <div class="form-group">
             <label for="email_info">Merkez Email</label>

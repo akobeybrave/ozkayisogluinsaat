@@ -92,7 +92,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ExMIPWCJh4KqQKT4',
+            '_route' => 'generated::ygv6fXPMmRW0BGDW',
           ),
           1 => NULL,
           2 => 
@@ -1178,6 +1178,62 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/website/heroes' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.heroes.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.heroes.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/website/heroes/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.heroes.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/register' => 
       array (
         0 => 
@@ -1201,7 +1257,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::GTPRT7lfeoDqsGfj',
+            '_route' => 'generated::m87UhQ4F2RchEuGn',
           ),
           1 => NULL,
           2 => 
@@ -1237,7 +1293,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::6qpQdpK52rGtlm2J',
+            '_route' => 'generated::94WtYkyzcnMNp3Jf',
           ),
           1 => NULL,
           2 => 
@@ -1367,7 +1423,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::lBjuMl7SLMwWhVcJ',
+            '_route' => 'generated::hglBY0cCZfck8hbi',
           ),
           1 => NULL,
           2 => 
@@ -1421,7 +1477,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/_debugbar/c(?|lockwork/([^/]++)(*:39)|ache/([^/]++)(?:/([^/]++))?(*:73))|/admin/users/(?|([^/]++)(?|(*:108)|/edit(*:121)|(*:129))|toggle\\-status/([^/]++)(*:161)|change\\-password/([^/]++)(*:194)|update\\-password/([^/]++)(*:227))|/website/(?|categories/([^/]++)(?|(*:270)|/edit(*:283)|(*:291))|tadilats/([^/]++)(?|(*:320)|/edit(*:333)|(*:341))|mimaris/([^/]++)(?|(*:369)|/edit(*:382)|(*:390))|izolasyons/([^/]++)(?|(*:421)|/edit(*:434)|(*:442)))|/reset\\-password/([^/]++)(*:477)|/verify\\-email/([^/]++)/([^/]++)(*:517))/?$}sDu',
+      0 => '{^(?|/_debugbar/c(?|lockwork/([^/]++)(*:39)|ache/([^/]++)(?:/([^/]++))?(*:73))|/admin/users/(?|([^/]++)(?|(*:108)|/edit(*:121)|(*:129))|toggle\\-status/([^/]++)(*:161)|change\\-password/([^/]++)(*:194)|update\\-password/([^/]++)(*:227))|/website/(?|categories/([^/]++)(?|(*:270)|/edit(*:283)|(*:291))|tadilats/([^/]++)(?|(*:320)|/edit(*:333)|(*:341))|mimaris/([^/]++)(?|(*:369)|/edit(*:382)|(*:390))|izolasyons/([^/]++)(?|(*:421)|/edit(*:434)|(*:442))|heroes/([^/]++)(?|(*:469)|/edit(*:482)|(*:490)))|/reset\\-password/([^/]++)(*:525)|/verify\\-email/([^/]++)/([^/]++)(*:565))/?$}sDu',
     ),
     3 => 
     array (
@@ -1979,7 +2035,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      477 => 
+      469 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.heroes.show',
+          ),
+          1 => 
+          array (
+            0 => 'hero',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      482 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.heroes.edit',
+          ),
+          1 => 
+          array (
+            0 => 'hero',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      490 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.heroes.update',
+          ),
+          1 => 
+          array (
+            0 => 'hero',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.heroes.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'hero',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      525 => 
       array (
         0 => 
         array (
@@ -2002,7 +2146,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      517 => 
+      565 => 
       array (
         0 => 
         array (
@@ -2267,7 +2411,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ExMIPWCJh4KqQKT4' => 
+    'generated::ygv6fXPMmRW0BGDW' => 
     array (
       'methods' => 
       array (
@@ -2296,7 +2440,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"000000000000091c0000000000000000";}}',
-        'as' => 'generated::ExMIPWCJh4KqQKT4',
+        'as' => 'generated::ygv6fXPMmRW0BGDW',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5339,6 +5483,277 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'website.heroes.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'website/heroes',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'website',
+        ),
+        'as' => 'website.heroes.index',
+        'uses' => 'App\\Http\\Controllers\\HeroController@index',
+        'controller' => 'App\\Http\\Controllers\\HeroController@index',
+        'namespace' => NULL,
+        'prefix' => '/website',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.heroes.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'website/heroes/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'website',
+        ),
+        'as' => 'website.heroes.create',
+        'uses' => 'App\\Http\\Controllers\\HeroController@create',
+        'controller' => 'App\\Http\\Controllers\\HeroController@create',
+        'namespace' => NULL,
+        'prefix' => '/website',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.heroes.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'website/heroes',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'website',
+        ),
+        'as' => 'website.heroes.store',
+        'uses' => 'App\\Http\\Controllers\\HeroController@store',
+        'controller' => 'App\\Http\\Controllers\\HeroController@store',
+        'namespace' => NULL,
+        'prefix' => '/website',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.heroes.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'website/heroes/{hero}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'website',
+        ),
+        'as' => 'website.heroes.show',
+        'uses' => 'App\\Http\\Controllers\\HeroController@show',
+        'controller' => 'App\\Http\\Controllers\\HeroController@show',
+        'namespace' => NULL,
+        'prefix' => '/website',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.heroes.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'website/heroes/{hero}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'website',
+        ),
+        'as' => 'website.heroes.edit',
+        'uses' => 'App\\Http\\Controllers\\HeroController@edit',
+        'controller' => 'App\\Http\\Controllers\\HeroController@edit',
+        'namespace' => NULL,
+        'prefix' => '/website',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.heroes.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'website/heroes/{hero}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'website',
+        ),
+        'as' => 'website.heroes.update',
+        'uses' => 'App\\Http\\Controllers\\HeroController@update',
+        'controller' => 'App\\Http\\Controllers\\HeroController@update',
+        'namespace' => NULL,
+        'prefix' => '/website',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.heroes.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'website/heroes/{hero}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'website',
+        ),
+        'as' => 'website.heroes.destroy',
+        'uses' => 'App\\Http\\Controllers\\HeroController@destroy',
+        'controller' => 'App\\Http\\Controllers\\HeroController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/website',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'register' => 
     array (
       'methods' => 
@@ -5377,7 +5792,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::GTPRT7lfeoDqsGfj' => 
+    'generated::m87UhQ4F2RchEuGn' => 
     array (
       'methods' => 
       array (
@@ -5398,7 +5813,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::GTPRT7lfeoDqsGfj',
+        'as' => 'generated::m87UhQ4F2RchEuGn',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5452,7 +5867,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::6qpQdpK52rGtlm2J' => 
+    'generated::94WtYkyzcnMNp3Jf' => 
     array (
       'methods' => 
       array (
@@ -5473,7 +5888,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::6qpQdpK52rGtlm2J',
+        'as' => 'generated::94WtYkyzcnMNp3Jf',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5793,7 +6208,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::lBjuMl7SLMwWhVcJ' => 
+    'generated::hglBY0cCZfck8hbi' => 
     array (
       'methods' => 
       array (
@@ -5814,7 +6229,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::lBjuMl7SLMwWhVcJ',
+        'as' => 'generated::hglBY0cCZfck8hbi',
       ),
       'fallback' => false,
       'defaults' => 

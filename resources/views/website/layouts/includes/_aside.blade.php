@@ -56,6 +56,13 @@
                 </li>
 
                 <li class="sidebar-item">
+                    <a href="{{ route("website.heroes.index") }}" class="sidebar-link aktext" aria-expanded="false">
+                        <span><i class="ri-equalizer-line ri-xl"></i></span>
+                        <span class="hide-menu">Slider</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
                     <a href="{{ route("website.settings.index") }}" class="sidebar-link aktext" aria-expanded="false">
                         <span><i class="ri-equalizer-line ri-xl"></i></span>
                         <span class="hide-menu">Ayarlar</span>

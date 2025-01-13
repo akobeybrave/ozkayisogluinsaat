@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('tel');
             $table->string('mobile');
+            $table->string('mobile_site');
             $table->string('city');
             $table->string('town');
             $table->string('district');

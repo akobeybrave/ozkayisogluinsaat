@@ -89,6 +89,7 @@ class SettingController extends Controller
             'address' => 'required|string|max:255',
             'tel' => 'required|string|max:20',
             'mobile' => 'required|string|max:20',
+            'mobile_site' => 'required|string|max:20',
             'email_info' => 'required|string|max:255',
             'email_muhasebe' => 'required|string|max:255',
             'facebook' => 'required|string|max:255',
@@ -104,6 +105,7 @@ class SettingController extends Controller
         $setting->address = $request->address;
         $setting->tel = $request->tel;
         $setting->mobile = $request->mobile;
+        $setting->mobile_site = $request->mobile_site;
         $setting->email_info = $request->email_info;
         $setting->email_muhasebe = $request->email_muhasebe;
         $setting->facebook = $request->facebook;

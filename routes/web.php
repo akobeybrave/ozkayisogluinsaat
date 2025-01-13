@@ -10,6 +10,7 @@ use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HeroController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\WebsiteDashboardController;
 use App\Http\Controllers\HomeController;
@@ -103,6 +104,8 @@ Route::middleware(['auth', 'website'])->prefix("website")->name("website.")->gro
     Route::post('/ayarlar/site-bilgileri', [SettingController::class, 'updateSiteBilgileri'])->name('ayarlar.updateSiteBilgileri');
     Route::post('/ayarlar/iletisim-bilgileri', [SettingController::class, 'updateIletisimBilgileri'])->name('ayarlar.updateIletisimBilgileri');
     Route::post('/ayarlar/medya', [SettingController::class, 'updateMedya'])->name('ayarlar.updateMedya');
+
+    Route::resource("heroes", HeroController::class);
 
 
 });

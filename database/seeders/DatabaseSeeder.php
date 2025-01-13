@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             TadilatimagesSeeder::class,
             MimariimagesSeeder::class,
             IzolasyonimagesSeeder::class,
+            HeroSeeder::class,
             SettingSeeder::class,
         ]);
 

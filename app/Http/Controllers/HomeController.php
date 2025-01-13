@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Hero;
 use App\Models\Izolasyon;
 use App\Models\Izolasyonimages;
 use App\Models\Mimari;
@@ -20,7 +21,8 @@ class HomeController extends Controller
         $mimari = Mimari::where('id', 1)->first();
         $izolasyon = Izolasyon::where('id', 1)->first();
         $categories = Category::all();
-        return view('frontend.index', compact('tadilat', 'categories', 'mimari', "izolasyon"));
+        $heroDatas = Hero::all();
+        return view('frontend.index', compact('tadilat', 'categories', 'mimari', "izolasyon", "heroDatas"));
     }
 
     public function about(){
