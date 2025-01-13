@@ -93,6 +93,7 @@ class SettingController extends Controller
             'email_muhasebe' => 'required|string|max:255',
             'facebook' => 'required|string|max:255',
             'instagram' => 'required|string|max:255',
+            'google_map' => 'required',
         ]);
 
         $setting = Setting::firstOrNew();
@@ -107,6 +108,7 @@ class SettingController extends Controller
         $setting->email_muhasebe = $request->email_muhasebe;
         $setting->facebook = $request->facebook;
         $setting->instagram = $request->instagram;
+        $setting->google_map = $request->google_map;
 
         $setting->save();
 

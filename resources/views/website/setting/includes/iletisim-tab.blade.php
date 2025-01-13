@@ -46,6 +46,11 @@
             <label for="instagram">Instagram</label>
             <input type="text" class="form-control" id="instagram" name="instagram" value="{{ $setting->instagram ?? '' }}">
         </div>
+
+        <div class="form-group">
+            <label for="google_map">Google Harita</label>
+            <textarea class="form-control" name="google_map" id="google_map" cols="30" rows="5">{{ $setting->google_map ?? '' }}</textarea>
+        </div>
         <button type="submit" class="btn btn-primary">Güncelle</button>
     </form>
 </div>
